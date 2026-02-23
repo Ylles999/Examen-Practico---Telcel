@@ -44,8 +44,10 @@ com.cliente
 ## 🔎 Endpoints Disponibles
 📌 Listar Clientes
 GET http://localhost:7575/api/clientes
+---
 📌 Buscar Cliente por ID
 GET http://localhost:7575/api/clientes/{id}
+---
 📌 Crear Cliente
 POST http://localhost:7575/api/clientes
 
@@ -59,6 +61,8 @@ Ejemplo JSON:
   "nss": "98765432109",
   "curp": "LOPC980615HDFRRN08"
 }
+
+---
 📌 Eliminar Cliente
 DELETE http://localhost:7575/api/clientes/{id}
 
