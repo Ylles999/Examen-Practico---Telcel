@@ -39,7 +39,9 @@ com.cliente
 └── exception
     └── GlobalExceptionHandler
 
-🔎 Endpoints Disponibles
+---
+
+## 🔎 Endpoints Disponibles
 📌 Listar Clientes
 GET http://localhost:7575/api/clientes
 📌 Buscar Cliente por ID
@@ -60,7 +62,9 @@ Ejemplo JSON:
 📌 Eliminar Cliente
 DELETE http://localhost:7575/api/clientes/{id}
 
-✅ Características Implementadas
+---
+
+## ✅ Características Implementadas
 Arquitectura en capas
 Integración con Oracle mediante secuencia
 CRUD completo
