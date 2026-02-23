@@ -56,7 +56,7 @@ CREATE TABLE CLIENTE (
     CURP VARCHAR2(18)
 );
 
-
+---
 ### Secuencia
 
 CREATE SEQUENCE SEQ_CLIENTE
@@ -65,6 +65,7 @@ INCREMENT BY 1
 NOCACHE
 NOCYCLE;
 
+---
 ## 🔎 Endpoints Disponibles
 
 --> Listar Clientes
