@@ -37,6 +37,7 @@ com.cliente
 │
 └── exception
     └── GlobalExceptionHandler
+    
 🗄️ Base de Datos (Oracle)
 Tabla CLIENTE
 CREATE TABLE CLIENTE (
