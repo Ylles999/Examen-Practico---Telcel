@@ -1,20 +1,26 @@
-📌 Sistema de Gestión de Clientes - Spring Boot + Oracle
-📖 Descripción
+# 📌 Sistema de Gestión de Clientes - Spring Boot + Oracle
 
-Aplicación desarrollada con Spring Boot 3 que permite la gestión de clientes mediante un CRUD completo, utilizando Oracle Database 19c como base de datos.
+## 📖 Descripción
+
+Aplicación desarrollada con **Spring Boot 3** que permite la gestión de clientes mediante un CRUD completo, utilizando **Oracle Database 19c** como base de datos.
 
 El proyecto implementa arquitectura en capas (Controller, Service, Repository) siguiendo buenas prácticas aplicadas durante la capacitación.
 
-🛠️ Tecnologías Utilizadas
+---
 
-* Java 21
-* Spring Boot 3
-* Spring Data JPA
-* Oracle Database 19c
-* Maven
-* Postman (pruebas de endpoints)
+## 🛠️ Tecnologías Utilizadas
 
-🗂️ Estructura del Proyecto
+- Java 21
+- Spring Boot 3
+- Spring Data JPA
+- Oracle Database 19c
+- Maven
+- Postman (pruebas de endpoints)
+
+---
+
+## 🗂️ Estructura del Proyecto
+
 com.cliente
 │
 ├── controller
