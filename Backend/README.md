@@ -1,31 +1,18 @@
 📌 Sistema de Gestión de Clientes - Spring Boot + Oracle
 📖 Descripción
 
-<<<<<<< HEAD
-Aplicación desarrollada con Spring Boot 4 que permite la gestión de clientes mediante un CRUD completo, utilizando Oracle Database 19c como base de datos.
-=======
 Aplicación desarrollada con Spring Boot 3 que permite la gestión de clientes mediante un CRUD completo, utilizando Oracle Database 19c como base de datos.
->>>>>>> 49631a266f5413a08aaa0c37e0cd8fa595dcf8c2
 
 El proyecto implementa arquitectura en capas (Controller, Service, Repository) siguiendo buenas prácticas aplicadas durante la capacitación.
 
 🛠️ Tecnologías Utilizadas
 
-Java 21
-
-<<<<<<< HEAD
-Spring Boot 4
-=======
-Spring Boot 3
->>>>>>> 49631a266f5413a08aaa0c37e0cd8fa595dcf8c2
-
-Spring Data JPA
-
-Oracle Database 19c
-
-Maven
-
-Postman (pruebas de endpoints)
+* Java 21
+* Spring Boot 3
+* Spring Data JPA
+* Oracle Database 19c
+* Maven
+* Postman (pruebas de endpoints)
 
 🗂️ Estructura del Proyecto
 com.cliente
@@ -45,48 +32,13 @@ com.cliente
 │
 └── exception
     └── GlobalExceptionHandler
-<<<<<<< HEAD
-=======
-    
->>>>>>> 49631a266f5413a08aaa0c37e0cd8fa595dcf8c2
-🗄️ Base de Datos (Oracle)
-Tabla CLIENTE
-CREATE TABLE CLIENTE (
-    ID_CLIENTE NUMBER PRIMARY KEY,
-    NOMBRE VARCHAR2(100) NOT NULL,
-    FECHA_NACIMIENTO DATE,
-    CELULAR VARCHAR2(10),
-    CORREO VARCHAR2(100),
-    NSS VARCHAR2(11),
-    CURP VARCHAR2(18)
-);
-Secuencia
-CREATE SEQUENCE SEQ_CLIENTE
-START WITH 1
-INCREMENT BY 1
-NOCACHE
-NOCYCLE;
-<<<<<<< HEAD
+
 🔎 Endpoints Disponibles
 📌 Listar Clientes
 GET http://localhost:7575/api/clientes
 📌 Buscar Cliente por ID
 GET http://localhost:7575/api/clientes/{id}
 📌 Crear Cliente
-=======
-
-🔎 Endpoints Disponibles
-📌 Listar Clientes
-
-GET http://localhost:7575/api/clientes
-
-📌 Buscar Cliente por ID
-
-GET http://localhost:7575/api/clientes/{id}
-
-📌 Crear Cliente
-
->>>>>>> 49631a266f5413a08aaa0c37e0cd8fa595dcf8c2
 POST http://localhost:7575/api/clientes
 
 Ejemplo JSON:
@@ -100,40 +52,12 @@ Ejemplo JSON:
   "curp": "LOPC980615HDFRRN08"
 }
 📌 Eliminar Cliente
-<<<<<<< HEAD
-=======
-
->>>>>>> 49631a266f5413a08aaa0c37e0cd8fa595dcf8c2
 DELETE http://localhost:7575/api/clientes/{id}
-✅ Características Implementadas
 
-<<<<<<< HEAD
-=======
 ✅ Características Implementadas
-
->>>>>>> 49631a266f5413a08aaa0c37e0cd8fa595dcf8c2
 Arquitectura en capas
-
 Integración con Oracle mediante secuencia
-
 CRUD completo
-
 Validaciones con Jakarta Validation
-
 Manejo global de excepciones
-
 Respuestas HTTP adecuadas (200, 201, 404, 204)
-
-🚀 Cómo Ejecutar el Proyecto
-
-Crear tabla y secuencia en Oracle (SQL Developer)
-
-Configurar credenciales en application.properties
-
-Ejecutar como Spring Boot App
-
-<<<<<<< HEAD
-Probar endpoints con Postman
-=======
-Probar endpoints con Postman
->>>>>>> 49631a266f5413a08aaa0c37e0cd8fa595dcf8c2
