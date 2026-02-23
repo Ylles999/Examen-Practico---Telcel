@@ -1,7 +1,11 @@
 📌 Sistema de Gestión de Clientes - Spring Boot + Oracle
 📖 Descripción
 
+<<<<<<< HEAD
 Aplicación desarrollada con Spring Boot 4 que permite la gestión de clientes mediante un CRUD completo, utilizando Oracle Database 19c como base de datos.
+=======
+Aplicación desarrollada con Spring Boot 3 que permite la gestión de clientes mediante un CRUD completo, utilizando Oracle Database 19c como base de datos.
+>>>>>>> 49631a266f5413a08aaa0c37e0cd8fa595dcf8c2
 
 El proyecto implementa arquitectura en capas (Controller, Service, Repository) siguiendo buenas prácticas aplicadas durante la capacitación.
 
@@ -9,7 +13,11 @@ El proyecto implementa arquitectura en capas (Controller, Service, Repository) s
 
 Java 21
 
+<<<<<<< HEAD
 Spring Boot 4
+=======
+Spring Boot 3
+>>>>>>> 49631a266f5413a08aaa0c37e0cd8fa595dcf8c2
 
 Spring Data JPA
 
@@ -37,6 +45,10 @@ com.cliente
 │
 └── exception
     └── GlobalExceptionHandler
+<<<<<<< HEAD
+=======
+    
+>>>>>>> 49631a266f5413a08aaa0c37e0cd8fa595dcf8c2
 🗄️ Base de Datos (Oracle)
 Tabla CLIENTE
 CREATE TABLE CLIENTE (
@@ -54,12 +66,27 @@ START WITH 1
 INCREMENT BY 1
 NOCACHE
 NOCYCLE;
+<<<<<<< HEAD
 🔎 Endpoints Disponibles
 📌 Listar Clientes
 GET http://localhost:7575/api/clientes
 📌 Buscar Cliente por ID
 GET http://localhost:7575/api/clientes/{id}
 📌 Crear Cliente
+=======
+
+🔎 Endpoints Disponibles
+📌 Listar Clientes
+
+GET http://localhost:7575/api/clientes
+
+📌 Buscar Cliente por ID
+
+GET http://localhost:7575/api/clientes/{id}
+
+📌 Crear Cliente
+
+>>>>>>> 49631a266f5413a08aaa0c37e0cd8fa595dcf8c2
 POST http://localhost:7575/api/clientes
 
 Ejemplo JSON:
@@ -73,9 +100,18 @@ Ejemplo JSON:
   "curp": "LOPC980615HDFRRN08"
 }
 📌 Eliminar Cliente
+<<<<<<< HEAD
+=======
+
+>>>>>>> 49631a266f5413a08aaa0c37e0cd8fa595dcf8c2
 DELETE http://localhost:7575/api/clientes/{id}
 ✅ Características Implementadas
 
+<<<<<<< HEAD
+=======
+✅ Características Implementadas
+
+>>>>>>> 49631a266f5413a08aaa0c37e0cd8fa595dcf8c2
 Arquitectura en capas
 
 Integración con Oracle mediante secuencia
@@ -96,4 +132,8 @@ Configurar credenciales en application.properties
 
 Ejecutar como Spring Boot App
 
+<<<<<<< HEAD
 Probar endpoints con Postman
+=======
+Probar endpoints con Postman
+>>>>>>> 49631a266f5413a08aaa0c37e0cd8fa595dcf8c2
