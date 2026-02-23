@@ -42,13 +42,13 @@ com.cliente
 ---
 
 ## 🔎 Endpoints Disponibles
-📌 Listar Clientes
+### 📌 Listar Clientes
 GET http://localhost:7575/api/clientes
 ---
-📌 Buscar Cliente por ID
+### 📌 Buscar Cliente por ID
 GET http://localhost:7575/api/clientes/{id}
 ---
-📌 Crear Cliente
+### 📌 Crear Cliente
 POST http://localhost:7575/api/clientes
 
 Ejemplo JSON:
@@ -63,7 +63,7 @@ Ejemplo JSON:
 }
 
 ---
-📌 Eliminar Cliente
+### 📌 Eliminar Cliente
 DELETE http://localhost:7575/api/clientes/{id}
 
 ---
