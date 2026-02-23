@@ -1,51 +1,44 @@
-# 📌 Sistema de Gestión de Clientes - Spring Boot + Oracle
+📌 Sistema de Gestión de Clientes - Spring Boot + Oracle
+📖 Descripción
 
-## 📖 Descripción
+Aplicación desarrollada con Spring Boot 3 que permite la gestión de clientes mediante un CRUD completo, utilizando Oracle Database 19c como base de datos.
 
-Aplicación desarrollada con **Spring Boot 3** que permite la gestión de clientes mediante un CRUD completo, utilizando **Oracle Database 19c** como base de datos.
+El proyecto implementa arquitectura en capas (Controller, Service, Repository) siguiendo buenas prácticas aplicadas durante la capacitación.
 
-El proyecto implementa arquitectura en capas (Controller, Service, Repository) siguiendo buenas prácticas vistas durante la capacitación.
+🛠️ Tecnologías Utilizadas
 
----
+Java 21
 
-## 🛠️ Tecnologías Utilizadas
+Spring Boot 3
 
-- Java 21
-- Spring Boot 3
-- Spring Data JPA
-- Oracle Database 19c
-- Maven
-- Postman (pruebas de endpoints)
+Spring Data JPA
 
----
+Oracle Database 19c
 
-## 🗂️ Estructura del Proyecto
+Maven
+
+Postman (pruebas de endpoints)
+
+🗂️ Estructura del Proyecto
 com.cliente
 │
 ├── controller
-│ └── ClienteController
+│   └── ClienteController
 │
 ├── service
-│ ├── IClienteService
-│ └── ClienteServiceImpl
+│   ├── IClienteService
+│   └── ClienteServiceImpl
 │
 ├── repository
-│ └── ClienteRepository
+│   └── ClienteRepository
 │
 ├── model
-│ └── Cliente
+│   └── Cliente
 │
 └── exception
-└── GlobalExceptionHandler
-
-
----
-
-## 🗄️ Base de Datos (Oracle)
-
-### Tabla CLIENTE
-
-```sql
+    └── GlobalExceptionHandler
+🗄️ Base de Datos (Oracle)
+Tabla CLIENTE
 CREATE TABLE CLIENTE (
     ID_CLIENTE NUMBER PRIMARY KEY,
     NOMBRE VARCHAR2(100) NOT NULL,
@@ -55,29 +48,27 @@ CREATE TABLE CLIENTE (
     NSS VARCHAR2(11),
     CURP VARCHAR2(18)
 );
-
----
-### Secuencia
-
+Secuencia
 CREATE SEQUENCE SEQ_CLIENTE
 START WITH 1
 INCREMENT BY 1
 NOCACHE
 NOCYCLE;
 
----
-## 🔎 Endpoints Disponibles
+🔎 Endpoints Disponibles
+📌 Listar Clientes
 
---> Listar Clientes
 GET http://localhost:7575/api/clientes
 
---> Buscar Cliente por ID
+📌 Buscar Cliente por ID
+
 GET http://localhost:7575/api/clientes/{id}
 
---> Crear Cliente
+📌 Crear Cliente
+
 POST http://localhost:7575/api/clientes
 
-ejemplo de un JSON para crear:
+Ejemplo JSON:
 
 {
   "nombre": "Carlos Lopez",
@@ -87,7 +78,30 @@ ejemplo de un JSON para crear:
   "nss": "98765432109",
   "curp": "LOPC980615HDFRRN08"
 }
+📌 Eliminar Cliente
 
---> Eliminar Cliente
 DELETE http://localhost:7575/api/clientes/{id}
 
+✅ Características Implementadas
+
+Arquitectura en capas
+
+Integración con Oracle mediante secuencia
+
+CRUD completo
+
+Validaciones con Jakarta Validation
+
+Manejo global de excepciones
+
+Respuestas HTTP adecuadas (200, 201, 404, 204)
+
+🚀 Cómo Ejecutar el Proyecto
+
+Crear tabla y secuencia en Oracle (SQL Developer)
+
+Configurar credenciales en application.properties
+
+Ejecutar como Spring Boot App
+
+Probar endpoints con Postman
